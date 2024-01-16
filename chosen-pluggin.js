@@ -2,7 +2,10 @@
 // here's a solution
 
 jQuery(document).ready(($)=>{
-  $('selected-element').chosen();
+  $('selected-element').chosen({
+    placeholder_text_multiple:"new text",
+  });
 
+  // or 
   $('selected-element').val('your new placeholder'); // changing the default placeholder
 })
